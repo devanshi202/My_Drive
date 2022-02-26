@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <button class="folderAdd">Add Folder</button>
+      <button class="fileAdd">Add File</button>
+      <button class="albumAdd">Add Album</button>
+    </div>
+
+    <div class="breadCrumb">
+      <a rid="-1" purpose="path">Root</a>
+    </div>
+
+    <div class="container"></div>
+
+    <div class="app">
+      <div class="titleBar">
+        <div class="appTitle" rid=""></div>
+        <div class="win-ac">
+          <span class="material-icons"> minimize </span>
+          <span class="material-icons"> crop_3_2 </span>
+          <span id="close" class="material-icons"> close </span>
+        </div>
+      </div>
+      <div class="menuBar"></div>
+      <div class="appBody"></div>
+    </div>
+
+    <template class="myTemplate">
+      <div class="folder" rid="" pid="">
+        <span action="rename">rename</span>
+        <span action="delete">delete</span>
+        <span action="view">view</span>
+        <div purpose="name"></div>
+      </div>
+      <div class="textFile" rid="" pid="">
+        <span action="rename">rename</span>
+        <span action="delete">delete</span>
+        <span action="view">view</span>
+        <div purpose="name"></div>
+      </div>
+      <div class="album" rid="" pid="">
+        <span action="rename">rename</span>
+        <span action="delete">delete</span>
+        <span action="view">view</span>
+        <div purpose="name"></div>
+      </div>
+      <a rid="-1" purpose="path"></a>
+      <div purpose="notepad-menu" class="notepad-menu">
+        <span action="save" class="material-icons"> save </span>
+        <span action="bold" pressed="false" class="material-icons">
+          format_bold
+        </span>
+        <span action="italic" pressed="false" class="material-icons">
+          format_italic
+        </span>
+        <span action="underline" pressed="false" class="material-icons">
+          format_underlined
+        </span>
+
+        <input type="color" class="bc" />
+        <input type="color" class="fc" />
+
+        <select name="font-type" id="font-type">
+          <option value="monospace">monospace</option>
+          <option value="sant-serif">sant-serif</option>
+          <option value="arial">arial</option>
+          <option value="calibri">calibri</option>
+        </select>
+        <select name="font-size" id="font-size">
+          <option value="2">2</option>
+          <option value="6">6</option>
+          <option value="8">8</option>
+          <option value="12">12</option>
+          <option value="16">16</option>
+          <option value="18">18</option>
+          <option value="20">20</option>
+          <option value="22">22</option>
+        </select>
+        <span class="material-icons" action="download"> file_download </span>
+        <span class="material-icons" action="forUpload"> file_upload </span>
+        <input action="upload" type="file" />
+        <a href="" purpose="download"></a>
+      </div>
+      <div purpose="notepad-body" class="notepad-body">
+        <textarea class="textArea">i am body</textarea>
+      </div>
+
+      <div purpose="album-menu" class="album-menu">
+        <span action="save" class="material-icons"> save </span>
+        <span class="material-icons" action="download"> file_download </span>
+        <span class="material-icons" action="forUpload"> file_upload </span>
+        <span action="add" class="material-icons"> add </span>
+        <span action="delete" class="material-icons"> delete_outline </span>
+        <span action="shift-left" class="material-icons"> arrow_back </span>
+        <span action="shift-right" class="material-icons"> arrow_forward </span>
+
+      </div>
+      <div purpose="album-body" class="album-body">
+        <div class = "img-list">
+
+        </div>
+        <div class = "img-view">
+          <span class="material-icons"> arrow_back_ios </span>
+          <div  class = "image-main">
+            <img src="">please select image </img>
+          </div>
+          <span class="material-icons"> arrow_forward_ios </span>
+        </div>
+      </div>
+    </template>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

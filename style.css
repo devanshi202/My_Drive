@@ -1,0 +1,255 @@
+.body{
+    box-sizing: border-box;
+}
+
+.header{
+    height: 6.5rem;
+    border: 1px solid black;
+    margin: 4px;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+}
+.header button{
+    margin: 21.5px;
+    padding: 23px;
+    cursor: pointer;
+    border: 0.5px solid black;
+    border-radius: 5px;
+}
+.header button:hover{
+    transform: scale(1.05);
+}
+
+.breadCrumb{
+    height: 2rem;
+    border: 1px solid black;
+    margin: 4px;
+    /* padding: 2px; */
+    display: flex;
+    align-items: center;
+}
+.breadCrumb a{
+    padding: 7px;
+    background-color: burlywood;
+    border-right: 4px solid black;
+}
+.breadCrumb a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+
+.container{
+    height: 10rem;
+    border: 1px solid black;
+    margin: 4px;
+    padding: 2px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.preview{
+    height: 5rem;
+    border: 1px solid black;
+    margin: 4px;
+    padding: 2px;
+}
+
+.folder{
+    height: 9rem;
+    width: 10rem;
+    margin: 3px;
+    padding: 5px;
+    background-color: cadetblue;
+}
+.folder div{
+    margin-top: 95px;
+}
+
+.folder [action]{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.folder [action]:hover{
+    color: blue;
+}
+
+.textFile{
+    height: 9rem;
+    width: 10rem;
+    margin: 3px;
+    padding: 5px;
+    background-color: rgb(172, 114, 148);
+}
+.textFile div{
+    margin-top: 95px;
+}
+
+.textFile [action]{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.textFile [action]:hover{
+    color: blue;
+}
+
+.app{
+    height: 20rem;
+}
+
+.titleBar{
+    height: 3rem;
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.appTitle{
+    width: 65%;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    margin-left: 20px;
+    
+}
+.win-ac{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    margin-right: -10px;
+}
+.material-icons{
+    margin: 20px;
+}
+.menuBar{
+    height: 3.5rem;
+    background-color: chocolate;
+}
+.appBody{
+    border: 2px solid black;
+    /* margin: 2px; */
+    background-color: rgb(104, 201, 201);
+    height: 30rem;
+}
+
+.notepad-menu{
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    width: 55rem;
+}
+
+.notepad-menu span:hover{
+    background-color: white;
+    
+    cursor: pointer;
+}
+
+.notepad-menu [pressed= "true"]{
+    background-color: white;
+    
+    cursor: pointer;
+}
+.notepad-menu span{
+    padding: 4px;
+}
+.notepad-menu input, select{
+    margin-right: 20px;
+}
+
+.notepad-body{
+    height: 100%;
+    width: 100%;
+}
+
+.notepad-body textarea{
+    height: 100%;
+    width: 100%;
+}
+.notepad-menu a{
+    display: none;
+}
+.notepad-menu input[action="upload"]{
+    display: none;
+}
+.win-ac span{
+    cursor: pointer;
+}
+
+.win-ac span:hover{
+    color: coral;
+}
+
+.album{
+    height: 9rem;
+    width: 10rem;
+    margin: 3px;
+    padding: 5px;
+    background-color: rgb(169, 231, 25);
+}
+.album div{
+    margin-top: 95px;
+}
+
+.album [action]{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.album [action]:hover{
+    color: blue;
+}
+.album-menu span:hover{
+    background-color: white;
+    cursor: pointer;
+}
+.album-menu span{
+    padding: 4px;
+}
+.album-body{
+    height: 100%;
+    width: 100%;
+}
+.img-list{
+    border: 2px solid black;
+    height: 25%;
+    padding: 3px;
+    display: flex;
+
+}
+.img-list>img{
+    height: 90%;
+    margin: 4px;
+    border: 1.5px solid whitesmoke;
+}
+.img-list > img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.img-view{
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 75%;
+    padding: 3px;
+}
+.image-main{
+    width: 70%;
+    height: 90%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+
+}
+.img-list > img[pressed= true]{
+    transform: scale(1.03);
+    border: 2px solid yellowgreen;
+    cursor: pointer;
+}
+
